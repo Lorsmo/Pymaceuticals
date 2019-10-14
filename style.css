@@ -1,0 +1,14 @@
+.carousel-inner img {
+  margin: auto;
+  margin-top: 50px;
+}
+.box{
+  padding: 0.9rem;
+  border-radius: 20px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.target{
+  border: 3px solid blue;
+  border-radius: 10px;
+}

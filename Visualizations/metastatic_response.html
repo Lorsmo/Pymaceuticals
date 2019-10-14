@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<head>
+    
+  <meta charset="UTF-8">
+  <title>Survival Rates</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  ​<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  ​
+  <link rel="stylesheet" type="text/css" href="../style.css">   
+    
+</head>
+
+<body class="bg-secondary">
+<nav class="navbar p-0 mb-1 navbar-expand-md sticky-top bg-light navbar-light" role="navigation">  
+        <a class="navbar-brand p-2 mt-0 ml-5 bg-primary text-white" href="../index.html"><i class="fas fa-home fa-fw"></i> Pymaceuticals</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbar"> 
+            <ul class="navbar-nav mr-5 ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-chart-area fa-fw"></i> Visualizations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="tumor_response.html"> Tumor Response</a>
+                        <a class="dropdown-item" href="metastatic_response.html"> Metastatic Response</a>
+                        <a class="dropdown-item" href="survival_rates.html"> Survival Rates</a>
+                        <a class="dropdown-item" href="summary_bar.html"> Summary Bar</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="../comparison.html"><i class="fas fa-greater-than-equal fa-fw"></i> Comparison</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link disabled" href="data.html"><i class="fas fa-table fa-fw"></i> Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<div class="container bg-secondary">
+        <div class="row">      
+            <div class="col-lg-8">
+                <div class="box bg-white p-0">
+                    <div class="h2 text-white bg-primary p-3">Survival Rates</div>
+                    <img src="../Pymaceuticals/Charts/metastatic_spread_during_treatment.png" width=100% alt="metastatic_response">
+                    <div class="p-3">
+                        <p>This scatter plot shows how the number of metastatic sites changes over time for each treatment. The 25 mice per drug treatment group have an average of 0.0 metastatic sites when the study starts. In each group, the metastatic sites increase but after 45 days, the average is significantly lower for Capomulin and Infubinol (respectively 1.48 and 2.11 vs 3.27 for Placebo). In conclusion, the Capomulin shows higher efficacy in limiting cancer spreading.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 ">
+                <div class="box bg-white p-0 pb-2">
+                    <div class="h4 mb-2 text-white bg-primary p-2 text-center">Visualizations</div>
+                    <div class="pl-4">
+                        <a href="tumor_response.html">
+                            <img class="float-left img-fluid" src="../Pymaceuticals/Charts/tumor_response_to_treatment.png" width=45% alt="tumor_response">
+                        </a>
+                        <a href="metastatic_response.html">
+                            <img class="img-fluid target" src="../Pymaceuticals/Charts/metastatic_spread_during_treatment.png" width=45%  alt="metastatic_spread_during_treatment">
+                        </a>
+                        <a href="survival_rates.html">
+                            <img class="float-left img-fluid" src="../Pymaceuticals/Charts/survival_during_treatment.png" width=45% alt="survival_during_treatment">
+                        </a>
+                        <a href="summary_bar.html">
+                            <img class="img-fluid" src="../Pymaceuticals/Charts/tumor_change.png" width=45%  alt="summary_bar">
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
